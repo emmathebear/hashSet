@@ -8,10 +8,11 @@ public class Main {
         System.out.println(class1);
         String student34 = "Maria";
         class1.add(student34);
-        System.out.println(class1);
-        class1.add("Anna");
-        class1.add(student34);
-        System.out.println(class1);
+        if (class1.contains(student34)) {
+            System.out.println(class1);
+        } else {
+            System.out.println("Student not present");
+        }
 
     }
 
@@ -19,6 +20,7 @@ public class Main {
         HashSet<String> temp = new HashSet<>();
         for (String i : elements) {
             temp.add(i);
+
         }
         return temp;
     }
